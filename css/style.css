@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Poppins, sans-serif;
 }
@@ -12,6 +16,7 @@ header img {
   width: 100%;
   height: auto;
   animation: fadeIn 3s;
+  box-sizing: border-box;
 }
 
 @keyframes fadeIn {
@@ -20,11 +25,11 @@ header img {
 }
 
 .card {
-  width: 100vw;
+  width: calc(100% - 24px);
 }
 
 .gallery img {
-  width: 100vw;
+  width: calc(100% - 20px);
 }
 
 @media all and (min-width: 700px){
